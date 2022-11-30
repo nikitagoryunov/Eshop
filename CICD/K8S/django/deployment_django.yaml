@@ -1,9 +1,9 @@
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: django_shop
+  name: django-shop
   labels:
-    app: django_shop_app
+    app: django-shop-app
 spec:
   replicas: 1
   selector:
@@ -15,8 +15,8 @@ spec:
         app: django-container
     spec:
       containers:
-        - name: django_shop
-          image: nagoryunov/shop:c0.1
+        - name: django-shop
+          image: nagoryunov/shop:v0.1
           #command: ['/bin/bash', 'run.sh'] # runs migrations and starts the server
           ports:
             - containerPort: 8000
