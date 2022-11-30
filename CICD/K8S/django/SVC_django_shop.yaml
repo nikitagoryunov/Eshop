@@ -5,7 +5,7 @@ metadata:
   name: django-service-shop
 spec:
   selector:
-    pod: django-shop
+    pod: django-shop-app
   ports:
   - protocol: TCP
     port: 8000
