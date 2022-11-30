@@ -2,7 +2,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: django-service
+  name: django-service-shop
 spec:
   selector:
     pod: django-shop
