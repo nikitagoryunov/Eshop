@@ -2,7 +2,7 @@
 kind: Service
 apiVersion: v1
 metadata:
-  name: django-service-shop
+  name: {{ include "helm_shop.fullname" . }}-srv
 spec:
   selector:
     pod: django-container
